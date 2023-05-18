@@ -1,0 +1,242 @@
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+  .container {
+    max-width: 1158px;
+  }
+
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+  }
+
+  .shadow-port-head {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e7e9fc;
+  }
+  .header-container {
+    align-items: center;
+  }
+
+  /*-------------------Логотип--------------------- */
+
+  .link {
+    text-decoration: none;
+  }
+
+  .logo {
+    margin-right: 76px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: var(--button-text-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  .studio {
+    color: var(--titel-text-color);
+  }
+
+  /*---------------------- Навігація------------------ */
+
+  .nav-menu-button {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .header-container {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .nav-link.current {
+    color: var(--button-hover-background);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--button-hover-background);
+  }
+
+  .nav-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--titel-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link::after {
+    content: '';
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--button-hover-background);
+    border-radius: 2px;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus::after,
+  .nav-link.current::after {
+    opacity: 1;
+  }
+  /*------------------------Адрес ------------------*/
+
+  .address-list .address-item:hover,
+  .address-list .address-item:focus {
+    color: var(--button-hover-background);
+  }
+
+  .address-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .solutions-text-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .solutions-text {
+    font-weight: 400;
+  }
+
+  .solutions-text-list {
+    column-gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .solutions-text-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .solutions-text-item::before {
+    content: '';
+    display: block;
+    height: 112px;
+    background-color: var(--second-background-color);
+    border-radius: 4px;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 8px;
+    /* outline: 1px solid red; */
+  }
+
+  .icon-anten::before {
+    background-image: url(../images/antenna.svg);
+  }
+
+  .icon-clock::before {
+    background-image: url(../images/clock.svg);
+  }
+
+  .icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+  }
+
+  .icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+  }
+
+  .example {
+    display: block;
+  }
+
+  .section.example {
+    padding-top: 0;
+  }
+
+  .title-container {
+    margin-bottom: 72px;
+  }
+
+  .example-item {
+    width: calc((100% - 48px) / 3);
+    margin-right: 24px;
+  }
+
+  .example-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .example-list {
+    display: flex;
+  }
+
+  .team-card {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .team .container {
+    max-width: 1158px;
+  }
+
+  .customers .container {
+    max-width: 1158px;
+  }
+  .customers-list-item {
+    width: calc((100% - 120px) / 6);
+  }
+
+  .footer-container {
+    justify-content: space-between;
+  }
+
+  .samples-list {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .samples-pic {
+    gap: 48px 24px;
+  }
+}
